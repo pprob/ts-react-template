@@ -1,20 +1,56 @@
 {
   "name": "bonsai",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
+  "repository": "https://github.com/pprob/bonsai.git",
+  "author": "<p.probert340@gmail.com>",
+  "license": "UNLICENSED",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start:dev": "ts-node-dev -r dotenv/config src/server/index.ts",
+    "start:client": "webpack serve --config ./webpack.config.js --mode development --port 8080"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/pprob/bonsai.git"
+  "dependencies": {
+    "@testing-library/react": "^12.0.0",
+    "@types/cookie-parser": "^1.4.2",
+    "@types/ejs": "^3.0.7",
+    "@types/express": "^4.17.13",
+    "@types/react-redux": "^7.1.18",
+    "axios": "^0.21.1",
+    "concurrently": "^6.2.0",
+    "cookie-parser": "^1.4.5",
+    "dotenv": "^10.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "history": "^5.0.0",
+    "jest": "^27.0.6",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.4",
+    "react-router": "^5.2.0",
+    "redux": "^4.1.0",
+    "reselect": "^4.0.0",
+    "typescript": "^4.3.5"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/pprob/bonsai/issues"
-  },
-  "homepage": "https://github.com/pprob/bonsai#readme"
+  "devDependencies": {
+    "@babel/core": "^7.14.8",
+    "@babel/preset-env": "^7.14.8",
+    "@babel/preset-react": "^7.14.5",
+    "@types/react-dom": "^17.0.9",
+    "@types/webpack-env": "^1.16.2",
+    "@typescript-eslint/eslint-plugin": "^4.28.3",
+    "@typescript-eslint/parser": "^4.28.3",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^6.2.0",
+    "eslint": "^7.30.0",
+    "eslint-plugin-react": "^7.24.0",
+    "html-loader": "^2.1.2",
+    "html-webpack-plugin": "^5.3.2",
+    "react-hot-loader": "^4.13.0",
+    "style-loader": "^3.2.1",
+    "ts-loader": "^9.2.3",
+    "ts-node-dev": "^1.1.8",
+    "webpack": "^5.45.1",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
+  }
 }
