@@ -1,4 +1,4 @@
-import express, { json } from 'express';
+import express, {json} from 'express';
 import path from 'path';
 import ejs from 'ejs';
 import cookieParser from 'cookie-parser';

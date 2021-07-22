@@ -1,9 +1,8 @@
 import https from 'https';
-import fs from 'fs';
 import app from './app';
 
 console.log(process.env.HTTPS);
-const { HTTPS, PORT } = process.env;
+const {HTTPS, PORT} = process.env;
 
 const startServer = () => {
   const listener = () => {

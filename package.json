@@ -7,7 +7,8 @@
   "license": "UNLICENSED",
   "scripts": {
     "start:dev": "ts-node-dev -r dotenv/config src/server/index.ts",
-    "start:client": "webpack serve --config ./webpack.config.js --mode development --port 8080"
+    "start:client": "webpack serve --config ./webpack.config.js --mode development --port 8080",
+    "lint": "eslint **/*.{ts,tsx,js}"
   },
   "dependencies": {
     "@testing-library/react": "^12.0.0",
@@ -37,11 +38,12 @@
     "@babel/preset-react": "^7.14.5",
     "@types/react-dom": "^17.0.9",
     "@types/webpack-env": "^1.16.2",
-    "@typescript-eslint/eslint-plugin": "^4.28.3",
-    "@typescript-eslint/parser": "^4.28.3",
+    "@typescript-eslint/eslint-plugin": "^4.28.4",
+    "@typescript-eslint/parser": "^4.28.4",
     "babel-loader": "^8.2.2",
     "css-loader": "^6.2.0",
-    "eslint": "^7.30.0",
+    "eslint": "^7.31.0",
+    "eslint-config-google": "^0.14.0",
     "eslint-plugin-react": "^7.24.0",
     "html-loader": "^2.1.2",
     "html-webpack-plugin": "^5.3.2",
