@@ -17,6 +17,7 @@
   "rules": {
     "linebreak-style": "off",
     "new-cap": "off",
-    "indent": ["error", 2]
+    "indent": ["error", 2, {"SwitchCase": 1}],
+    "require-jsdoc": "off"
   }
 }
