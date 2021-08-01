@@ -3,7 +3,7 @@ const path = require('path');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: path.resolve(__dirname, './src/client/index.tsx'),
+  entry: path.resolve(__dirname, './src/client/index.ts'),
   devtool: 'inline-source-map',
   output: {
     filename: 'bundle.js',
@@ -27,10 +27,13 @@ module.exports = {
         use: 'html-loader',
       },
       {
-        test: /\.css$/,
-        use: ['style-loader', 'css-loader'],
+        test: /\.s[ac]ss$/,
+        use: ['style-loader', 'css-loader', 'sass-loader'],
       },
     ],
+  },
+  resolve: {
+    extensions: ['.tsx', '.ts', '.js'],
   },
   plugins: [
     new HTMLWebpackPlugin({
