@@ -3,12 +3,13 @@ import ReactDOM from 'react-dom';
 import Providers from './containers/App/Provider';
 import history from './utils/history';
 import configureStore from './redux/configureStore';
+import App from './containers/App';
 
 const store = configureStore(history);
 
 const AppContainer = () => (
   <Providers history={history} store={store}>
-    <div>hello son</div>
+    <App />
   </Providers>
 );
 
