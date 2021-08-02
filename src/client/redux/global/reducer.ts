@@ -1,7 +1,9 @@
 import {GlobalState} from './types';
+import {Themes} from './enums';
 
 const initialState: GlobalState = {
   test: true,
+  theme: Themes.Light,
 };
 
 const globalReducer = (state = initialState, action) => {
